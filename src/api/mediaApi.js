@@ -4,6 +4,11 @@ const UNSPLASH_KEY = import.meta.env.VITE_UNSPLASH_KEY
 const PIXABAY_KEY = import.meta.env.VITE_PIXABAY_KEY
 const GIPHY_KEY = import.meta.env.VITE_GIPHY_KEY
 
+
+
+
+
+
 export const fetchPhotos = async(query,page=1,per_page=20) =>{      // cat ko receive kiya h as a queery
   const res = await axios.get("https://api.unsplash.com/search/photos",{
     params:{query,page,per_page},    // query pass krni h isme eg: like cat  and per page kitne element rhnege vo pass kiya 

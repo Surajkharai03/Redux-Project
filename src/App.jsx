@@ -1,3 +1,4 @@
+import ResultGrid from "./components/ResultGrid"
 import SearchBar from "./components/SearchBar"
 import Tabs from "./components/Tabs"
 
@@ -5,9 +6,10 @@ const App = () => {
 
  
   return (
-    <div className="h-screen w-screen text-white bg-gray-950">
+    <div className=" min-h-screen w-full text-white bg-gray-950">
       <SearchBar/>
       <Tabs/>
+      <ResultGrid/>
    
     </div>
   )
