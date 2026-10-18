@@ -90,7 +90,7 @@ const ResultGrid = () => {
 
     getData()
 
-  }, [query, activeTab])
+  }, [query, activeTab,dispatch])
 
 
   return (
@@ -114,9 +114,9 @@ const ResultGrid = () => {
           {results.map((item) => {
             return (
               <div key={item.id}>
-                <a href="">
+               
                   <ResultCard item={item} />
-                </a>
+                
               </div>
             )
           })}
